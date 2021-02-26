@@ -201,3 +201,8 @@ answer: (4, 0, -1)
 
 answer: (1, 2, 2, 0)
 '''
+
+
+n = int(input("Enter n: "))
+primes = [2] + [x for x in range(3, n + 1, 2) if list(filter(lambda i: x/i == x//i, range(3, x + 1, 2)))[0] == x]
+print(primes)
